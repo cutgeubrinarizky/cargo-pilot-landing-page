@@ -63,6 +63,7 @@ const plans = [
 
 const PricingSection = () => {
   const [isYearly, setIsYearly] = useState(false);
+  const [selectedPlan, setSelectedPlan] = useState(null);
 
   const togglePricing = () => {
     setIsYearly(!isYearly);
@@ -105,13 +106,14 @@ const PricingSection = () => {
           {plans.map((plan, index) => (
             <div
               key={index}
-              className={`bg-white rounded-2xl p-8 border ${
-                plan.popular
-                  ? "border-silogistik-orange-500 shadow-lg scale-105 z-10"
+              className={`bg-white rounded-2xl p-8 border transition-all duration-300 cursor-pointer transform hover:scale-105 ${
+                selectedPlan === index
+                  ? "border-silogistik-orange-500 shadow-lg scale-105"
                   : "border-slate-200 shadow-sm"
               }`}
               data-aos="fade-up"
               data-aos-delay={index * 100}
+              onClick={() => setSelectedPlan(index)}
             >
               <div className="mb-8">
                 <h3 className="text-2xl font-bold text-silogistik-blue-500">{plan.name}</h3>
@@ -136,8 +138,8 @@ const PricingSection = () => {
 
               <Button
                 className={`w-full ${
-                  plan.popular 
-                    ? "bg-silogistik-orange-500 hover:bg-silogistik-orange-600 text-white" 
+                  selectedPlan === index || plan.popular
+                    ? "bg-silogistik-orange-500 hover:bg-silogistik-orange-600 text-white"
                     : "bg-silogistik-blue-500 hover:bg-silogistik-blue-600 text-white"
                 }`}
               >
