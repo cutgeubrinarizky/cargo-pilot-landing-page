@@ -88,10 +88,10 @@ const AboutSection = () => {
                     alt={founder.name}
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   />
-                </div>
+            </div>
                 <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-silogistik-blue-500/0 to-silogistik-orange-500/0 group-hover:from-silogistik-blue-500/20 group-hover:to-silogistik-orange-500/20 transition-colors duration-300" />
-              </div>
-              
+          </div>
+
               <div 
                 className="backdrop-blur-sm bg-white/30 p-6 rounded-xl transition-all duration-300 group-hover:bg-white/40 w-full cursor-pointer"
                 onClick={() => toggleFounder(index)}
@@ -132,7 +132,7 @@ const AboutSection = () => {
               </div>
             </div>
           ))}
-        </div>
+          </div>
 
         <div className="max-w-3xl mx-auto text-center backdrop-blur-sm bg-white/70 rounded-2xl p-8 shadow-lg transition-all duration-300 hover:bg-white/80 hover:shadow-xl border border-white/20 group">
           <h3 className="text-2xl font-bold text-silogistik-blue-500 mb-4 transition-colors duration-300 group-hover:text-silogistik-orange-500">
