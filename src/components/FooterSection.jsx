@@ -26,7 +26,7 @@ const FooterSection = () => {
                 alt="SI Logistik Logo"
                 className="h-8 w-auto"
               />
-              <h3 className="font-bold text-xl mt-2">SI Logistik</h3>
+              {/* <h3 className="font-bold text-xl mt-2">SI Logistik</h3> */}
             </div>
             <p className="text-slate-400 mb-4">
               Platform manajemen logistik terpadu untuk meningkatkan efisiensi pengiriman dan

@@ -18,7 +18,7 @@ const Index = () => {
     window.scrollTo(0, 0);
     
     // Update document title
-    document.title = "CargoPilot - Solusi Manajemen Logistik Terpadu";
+    document.title = "SiLogistik - Solusi Manajemen Logistik Terpadu";
   }, []);
 
   return (

@@ -35,7 +35,7 @@ const HeroSection = () => {
                 <ArrowRight className="ml-2" size={20} />
               </Button>
             </div>
-            <div className="mt-10 flex items-center">
+            {/* <div className="mt-10 flex items-center">
               <div className="flex -space-x-3">
                 {[1, 2, 3, 4].map((i) => (
                   <div
@@ -50,7 +50,7 @@ const HeroSection = () => {
                 <p className="text-base font-semibold text-slate-900">500+ perusahaan</p>
                 <p className="text-sm text-slate-600">telah menggunakan SI Logistik</p>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="animate-zoom-in flex justify-center lg:justify-end">
             <div className="relative w-full max-w-2xl">
