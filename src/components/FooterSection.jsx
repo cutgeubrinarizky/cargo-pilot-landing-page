@@ -16,17 +16,17 @@ const FooterSection = () => {
   };
 
   return (
-    <footer className="bg-slate-900 text-white py-16">
+    <footer className="bg-silogistik-blue-900 text-white py-16">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <div className="mb-6">
               <img
-                src="/placeholder.svg"
-                alt="CargoPilot Logo"
+                src="/images/logosilogistik.png"
+                alt="SI Logistik Logo"
                 className="h-8 w-auto"
               />
-              <h3 className="font-bold text-xl mt-2">CargoPilot</h3>
+              <h3 className="font-bold text-xl mt-2">SI Logistik</h3>
             </div>
             <p className="text-slate-400 mb-4">
               Platform manajemen logistik terpadu untuk meningkatkan efisiensi pengiriman dan
@@ -35,7 +35,7 @@ const FooterSection = () => {
             <div className="flex space-x-4">
               <a
                 href="#"
-                className="h-10 w-10 flex items-center justify-center rounded-full bg-slate-800 hover:bg-slate-700 transition-colors"
+                className="h-10 w-10 flex items-center justify-center rounded-full bg-silogistik-blue-800 hover:bg-silogistik-blue-700 transition-colors"
               >
                 <svg
                   className="h-5 w-5 text-white"
@@ -52,7 +52,7 @@ const FooterSection = () => {
               </a>
               <a
                 href="#"
-                className="h-10 w-10 flex items-center justify-center rounded-full bg-slate-800 hover:bg-slate-700 transition-colors"
+                className="h-10 w-10 flex items-center justify-center rounded-full bg-silogistik-blue-800 hover:bg-silogistik-blue-700 transition-colors"
               >
                 <svg
                   className="h-5 w-5 text-white"
@@ -65,7 +65,7 @@ const FooterSection = () => {
               </a>
               <a
                 href="#"
-                className="h-10 w-10 flex items-center justify-center rounded-full bg-slate-800 hover:bg-slate-700 transition-colors"
+                className="h-10 w-10 flex items-center justify-center rounded-full bg-silogistik-blue-800 hover:bg-silogistik-blue-700 transition-colors"
               >
                 <svg
                   className="h-5 w-5 text-white"
@@ -82,7 +82,7 @@ const FooterSection = () => {
               </a>
               <a
                 href="#"
-                className="h-10 w-10 flex items-center justify-center rounded-full bg-slate-800 hover:bg-slate-700 transition-colors"
+                className="h-10 w-10 flex items-center justify-center rounded-full bg-silogistik-blue-800 hover:bg-silogistik-blue-700 transition-colors"
               >
                 <svg
                   className="h-5 w-5 text-white"
@@ -104,27 +104,27 @@ const FooterSection = () => {
             <h3 className="font-bold text-lg mb-4">Produk</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#features" className="text-slate-400 hover:text-white">
+                <a href="#features" className="text-slate-400 hover:text-silogistik-orange-500">
                   Fitur
                 </a>
               </li>
               <li>
-                <a href="#pricing" className="text-slate-400 hover:text-white">
+                <a href="#pricing" className="text-slate-400 hover:text-silogistik-orange-500">
                   Harga
                 </a>
               </li>
               <li>
-                <a href="#" className="text-slate-400 hover:text-white">
+                <a href="#" className="text-slate-400 hover:text-silogistik-orange-500">
                   Demo
                 </a>
               </li>
               <li>
-                <a href="#" className="text-slate-400 hover:text-white">
+                <a href="#" className="text-slate-400 hover:text-silogistik-orange-500">
                   Keamanan
                 </a>
               </li>
               <li>
-                <a href="#" className="text-slate-400 hover:text-white">
+                <a href="#" className="text-slate-400 hover:text-silogistik-orange-500">
                   Roadmap
                 </a>
               </li>
@@ -135,27 +135,27 @@ const FooterSection = () => {
             <h3 className="font-bold text-lg mb-4">Perusahaan</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#about" className="text-slate-400 hover:text-white">
+                <a href="#about" className="text-slate-400 hover:text-silogistik-orange-500">
                   Tentang Kami
                 </a>
               </li>
               <li>
-                <a href="#blog" className="text-slate-400 hover:text-white">
+                <a href="#blog" className="text-slate-400 hover:text-silogistik-orange-500">
                   Blog
                 </a>
               </li>
               <li>
-                <a href="#" className="text-slate-400 hover:text-white">
+                <a href="#" className="text-slate-400 hover:text-silogistik-orange-500">
                   Karir
                 </a>
               </li>
               <li>
-                <a href="#contact" className="text-slate-400 hover:text-white">
+                <a href="#contact" className="text-slate-400 hover:text-silogistik-orange-500">
                   Kontak
                 </a>
               </li>
               <li>
-                <a href="#" className="text-slate-400 hover:text-white">
+                <a href="#" className="text-slate-400 hover:text-silogistik-orange-500">
                   Media
                 </a>
               </li>
@@ -173,12 +173,12 @@ const FooterSection = () => {
                   type="email"
                   name="email"
                   placeholder="Email anda"
-                  className="rounded-r-none bg-slate-800 border-slate-700 text-white placeholder-slate-400 focus:border-cargo"
+                  className="rounded-r-none bg-silogistik-blue-800 border-silogistik-blue-700 text-white placeholder-slate-400 focus:border-silogistik-orange-500"
                   required
                 />
                 <Button
                   type="submit"
-                  className="rounded-l-none bg-cargo hover:bg-cargo-dark"
+                  className="rounded-l-none bg-silogistik-orange-500 hover:bg-silogistik-orange-600"
                 >
                   <Send className="h-4 w-4" />
                 </Button>
@@ -187,21 +187,21 @@ const FooterSection = () => {
           </div>
         </div>
 
-        <div className="border-t border-slate-800 pt-8">
+        <div className="border-t border-silogistik-blue-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
               <p className="text-slate-400">
-                &copy; {year} CargoPilot. Seluruh hak cipta dilindungi.
+                &copy; {year} SI Logistik. Seluruh hak cipta dilindungi.
               </p>
             </div>
             <div className="flex space-x-6">
-              <a href="#" className="text-slate-400 hover:text-white">
+              <a href="#" className="text-slate-400 hover:text-silogistik-orange-500">
                 Syarat Layanan
               </a>
-              <a href="#" className="text-slate-400 hover:text-white">
+              <a href="#" className="text-slate-400 hover:text-silogistik-orange-500">
                 Kebijakan Privasi
               </a>
-              <a href="#" className="text-slate-400 hover:text-white">
+              <a href="#" className="text-slate-400 hover:text-silogistik-orange-500">
                 Cookies
               </a>
             </div>

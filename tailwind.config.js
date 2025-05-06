@@ -24,11 +24,11 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: 'hsl(var(--primary))',
+					DEFAULT: '#0B3B6A',
 					foreground: 'hsl(var(--primary-foreground))'
 				},
 				secondary: {
-					DEFAULT: 'hsl(var(--secondary))',
+					DEFAULT: '#FF6B2C',
 					foreground: 'hsl(var(--secondary-foreground))'
 				},
 				destructive: {
@@ -50,6 +50,34 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
+				},
+				silogistik: {
+					blue: {
+						50: '#E6EEF4',
+						100: '#CCDDE9',
+						200: '#99BBD3',
+						300: '#6699BD',
+						400: '#3377A7',
+						500: '#0B3B6A',
+						600: '#092F55',
+						700: '#072340',
+						800: '#04172B',
+						900: '#020B16',
+						DEFAULT: '#0B3B6A'
+					},
+					orange: {
+						50: '#FFF0EC',
+						100: '#FFE1D9',
+						200: '#FFC3B3',
+						300: '#FFA58D',
+						400: '#FF8767',
+						500: '#FF6B2C',
+						600: '#CC5623',
+						700: '#99411A',
+						800: '#662B12',
+						900: '#331609',
+						DEFAULT: '#FF6B2C'
+					}
 				},
 				brand: {
 					50: '#E3F2FD',

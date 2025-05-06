@@ -32,29 +32,28 @@ const Navbar = () => {
         <div className="flex items-center">
           <a href="#" className="flex items-center">
             <img
-              src="/placeholder.svg"
-              alt="CargoPilot Logo"
+              src="/images/logosilogistik.png"
               className="h-8 w-auto"
             />
-            <span className="ml-2 text-xl font-bold text-cargo-dark">CargoPilot</span>
+            {/* <span className="ml-2 text-xl font-bold text-cargo-dark">CargoPilot</span> */}
           </a>
         </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#features" className="text-slate-700 hover:text-cargo font-medium">Fitur</a>
-          <a href="#benefits" className="text-slate-700 hover:text-cargo font-medium">Keunggulan</a>
-          <a href="#testimonials" className="text-slate-700 hover:text-cargo font-medium">Testimoni</a>
-          <a href="#pricing" className="text-slate-700 hover:text-cargo font-medium">Harga</a>
-          <a href="#faq" className="text-slate-700 hover:text-cargo font-medium">FAQ</a>
+          <a href="#features" className="text-slate-700 hover:text-silogistik-orange font-medium">Fitur</a>
+          <a href="#benefits" className="text-slate-700 hover:text-silogistik-orange font-medium">Keunggulan</a>
+          {/* <a href="#testimonials" className="text-slate-700 hover:text-cargo font-medium">Testimoni</a> */}
+          <a href="#pricing" className="text-slate-700 hover:text-silogistik-orange font-medium">Harga</a>
+          <a href="#faq" className="text-slate-700 hover:text-silogistik-orange font-medium">FAQ</a>
           
           <Dialog>
             <DialogTrigger asChild>
-              <Button variant="outline" className="text-cargo border-cargo hover:bg-cargo/10">Masuk</Button>
+              <Button variant="outline" className="text-silogistik-blue border-silogistik-blue hover:bg-silogistik-blue/10">Masuk</Button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-[425px]">
               <DialogHeader>
-                <DialogTitle className="text-center text-2xl font-bold">Masuk ke Akun Anda</DialogTitle>
+                <DialogTitle className="text-center text-2xl font-bold text-silogistik-blue">Masuk ke Akun Anda</DialogTitle>
                 <DialogDescription className="text-center">
                   Masukkan email dan kata sandi untuk mengakses akun Anda
                 </DialogDescription>
@@ -73,11 +72,11 @@ const Navbar = () => {
                     <Checkbox id="remember" />
                     <label htmlFor="remember" className="text-sm text-slate-600">Ingat saya</label>
                   </div>
-                  <a href="#" className="text-sm text-blue-600 hover:text-blue-800">Lupa kata sandi?</a>
+                  <a href="#" className="text-sm text-silogistik-orange hover:text-silogistik-orange/80">Lupa kata sandi?</a>
                 </div>
-                <Button className="w-full mt-2 bg-cargo hover:bg-cargo-dark">Masuk</Button>
+                <Button className="w-full mt-2 bg-silogistik-blue hover:bg-silogistik-blue/90">Masuk</Button>
                 <p className="text-center text-sm text-slate-600">
-                  Belum punya akun? <a href="#" className="text-blue-600 hover:text-blue-800">Daftar sekarang</a>
+                  Belum punya akun? <a href="#" className="text-silogistik-orange hover:text-silogistik-orange/80">Daftar sekarang</a>
                 </p>
               </div>
             </DialogContent>
@@ -85,13 +84,13 @@ const Navbar = () => {
           
           <Dialog>
             <DialogTrigger asChild>
-              <Button className="bg-cargo hover:bg-cargo-dark">Daftar</Button>
+              <Button className="bg-silogistik-orange hover:bg-silogistik-orange/90 text-white">Daftar</Button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-[425px]">
               <DialogHeader>
                 <DialogTitle className="text-center text-2xl font-bold">Buat Akun Baru</DialogTitle>
                 <DialogDescription className="text-center">
-                  Daftar untuk mulai menggunakan CargoPilot
+                  Daftar untuk mulai menggunakan SI Logistik
                 </DialogDescription>
               </DialogHeader>
               <div className="grid gap-4 py-4">
@@ -123,9 +122,9 @@ const Navbar = () => {
                     Saya setuju dengan <a href="#" className="text-blue-600 hover:text-blue-800">Syarat & Ketentuan</a> dan <a href="#" className="text-blue-600 hover:text-blue-800">Kebijakan Privasi</a>
                   </label>
                 </div>
-                <Button className="w-full mt-2 bg-cargo hover:bg-cargo-dark">Daftar Sekarang</Button>
+                <Button className="w-full mt-2 bg-silogistik-orange hover:bg-silogistik-orange/90">Daftar Sekarang</Button>
                 <p className="text-center text-sm text-slate-600">
-                  Sudah punya akun? <a href="#" className="text-blue-600 hover:text-blue-800">Masuk disini</a>
+                  Sudah punya akun? <a href="#" className="text-silogistik-orange hover:text-silogistik-orange/80">Masuk disini</a>
                 </p>
               </div>
             </DialogContent>
@@ -145,107 +144,36 @@ const Navbar = () => {
       {mobileMenuOpen && (
         <div className="md:hidden bg-white border-t border-slate-200 shadow-md">
           <div className="container mx-auto px-4 py-4 space-y-3">
-            <a href="#features" className="block py-2 text-slate-700 hover:text-cargo font-medium">
+            <a href="#features" className="block py-2 text-slate-700 hover:text-silogistik-orange font-medium">
               Fitur
             </a>
-            <a href="#benefits" className="block py-2 text-slate-700 hover:text-cargo font-medium">
+            <a href="#benefits" className="block py-2 text-slate-700 hover:text-silogistik-orange font-medium">
               Keunggulan
             </a>
-            <a href="#testimonials" className="block py-2 text-slate-700 hover:text-cargo font-medium">
+            <a href="#testimonials" className="block py-2 text-slate-700 hover:text-silogistik-orange font-medium">
               Testimoni
             </a>
-            <a href="#pricing" className="block py-2 text-slate-700 hover:text-cargo font-medium">
+            <a href="#pricing" className="block py-2 text-slate-700 hover:text-silogistik-orange font-medium">
               Harga
             </a>
-            <a href="#faq" className="block py-2 text-slate-700 hover:text-cargo font-medium">
+            <a href="#faq" className="block py-2 text-slate-700 hover:text-silogistik-orange font-medium">
               FAQ
             </a>
             <div className="pt-2 flex flex-col space-y-2">
               <Dialog>
                 <DialogTrigger asChild>
-                  <Button variant="outline" className="text-cargo border-cargo hover:bg-cargo/10 justify-center">
+                  <Button variant="outline" className="text-silogistik-blue border-silogistik-blue hover:bg-silogistik-blue/10 justify-center">
                     Masuk
                   </Button>
                 </DialogTrigger>
-                <DialogContent className="sm:max-w-[425px]">
-                  <DialogHeader>
-                    <DialogTitle className="text-center text-2xl font-bold">Masuk ke Akun Anda</DialogTitle>
-                    <DialogDescription className="text-center">
-                      Masukkan email dan kata sandi untuk mengakses akun Anda
-                    </DialogDescription>
-                  </DialogHeader>
-                  <div className="grid gap-4 py-4">
-                    <div className="grid gap-2">
-                      <Label htmlFor="email-mobile">Email</Label>
-                      <Input id="email-mobile" type="email" placeholder="nama@perusahaan.com" />
-                    </div>
-                    <div className="grid gap-2">
-                      <Label htmlFor="password-mobile">Kata Sandi</Label>
-                      <Input id="password-mobile" type="password" />
-                    </div>
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center space-x-2">
-                        <Checkbox id="remember-mobile" />
-                        <label htmlFor="remember-mobile" className="text-sm text-slate-600">Ingat saya</label>
-                      </div>
-                      <a href="#" className="text-sm text-blue-600 hover:text-blue-800">Lupa kata sandi?</a>
-                    </div>
-                    <Button className="w-full mt-2 bg-cargo hover:bg-cargo-dark">Masuk</Button>
-                    <p className="text-center text-sm text-slate-600">
-                      Belum punya akun? <a href="#" className="text-blue-600 hover:text-blue-800">Daftar sekarang</a>
-                    </p>
-                  </div>
-                </DialogContent>
               </Dialog>
               
               <Dialog>
                 <DialogTrigger asChild>
-                  <Button className="bg-cargo hover:bg-cargo-dark justify-center">
+                  <Button className="bg-silogistik-orange hover:bg-silogistik-orange/90 text-white justify-center">
                     Daftar
                   </Button>
                 </DialogTrigger>
-                <DialogContent className="sm:max-w-[425px]">
-                  <DialogHeader>
-                    <DialogTitle className="text-center text-2xl font-bold">Buat Akun Baru</DialogTitle>
-                    <DialogDescription className="text-center">
-                      Daftar untuk mulai menggunakan CargoPilot
-                    </DialogDescription>
-                  </DialogHeader>
-                  <div className="grid gap-4 py-4">
-                    <div className="grid grid-cols-2 gap-2">
-                      <div>
-                        <Label htmlFor="firstName-mobile">Nama Depan</Label>
-                        <Input id="firstName-mobile" />
-                      </div>
-                      <div>
-                        <Label htmlFor="lastName-mobile">Nama Belakang</Label>
-                        <Input id="lastName-mobile" />
-                      </div>
-                    </div>
-                    <div className="grid gap-2">
-                      <Label htmlFor="email-register-mobile">Email</Label>
-                      <Input id="email-register-mobile" type="email" placeholder="nama@perusahaan.com" />
-                    </div>
-                    <div className="grid gap-2">
-                      <Label htmlFor="password-register-mobile">Kata Sandi</Label>
-                      <Input id="password-register-mobile" type="password" />
-                    </div>
-                    <div className="grid gap-2">
-                      <Label htmlFor="confirm-password-mobile">Konfirmasi Kata Sandi</Label>
-                      <Input id="confirm-password-mobile" type="password" />
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <Checkbox id="terms-mobile" />
-                      <label htmlFor="terms-mobile" className="text-sm text-slate-600">
-                        Saya setuju dengan <a href="#" className="text-blue-600 hover:text-blue-800">Syarat & Ketentuan</a> dan <a href="#" className="text-blue-600 hover:text-blue-800">Kebijakan Privasi</a>
-                      </label>
-                    </div>
-                    <Button className="w-full mt-2 bg-cargo hover:bg-cargo-dark">Daftar Sekarang</Button>
-                    <p className="text-center text-sm text-slate-600">
-                      Sudah punya akun? <a href="#" className="text-blue-600 hover:text-blue-800">Masuk disini</a>
-                    </p>
-                  </div>
-                </DialogContent>
               </Dialog>
             </div>
           </div>

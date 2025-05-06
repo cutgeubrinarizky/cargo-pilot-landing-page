@@ -69,19 +69,19 @@ const PricingSection = () => {
   };
 
   return (
-    <section className="py-20 bg-cargo-light" id="pricing">
+    <section className="min-h-screen py-24 bg-gradient-to-b from-white to-silogistik-blue-50" id="pricing">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="section-title">Harga Paket</h2>
-          <p className="section-subtitle">
+        <div className="text-center mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-silogistik-blue-500">Harga Paket</h2>
+          <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-8">
             Pilih paket yang paling sesuai dengan kebutuhan bisnis Anda
           </p>
 
-          <div className="flex items-center justify-center mt-8 bg-white p-1 rounded-full w-fit mx-auto border border-slate-200">
+          <div className="flex items-center justify-center bg-white p-1 rounded-full w-fit mx-auto border border-slate-200">
             <button
               className={`px-6 py-2 rounded-full text-sm font-medium transition-all ${
                 !isYearly
-                  ? "bg-cargo text-white shadow-md"
+                  ? "bg-silogistik-orange-500 text-white shadow-md"
                   : "text-slate-500 hover:text-slate-800"
               }`}
               onClick={() => setIsYearly(false)}
@@ -91,7 +91,7 @@ const PricingSection = () => {
             <button
               className={`px-6 py-2 rounded-full text-sm font-medium transition-all ${
                 isYearly
-                  ? "bg-cargo text-white shadow-md"
+                  ? "bg-silogistik-orange-500 text-white shadow-md"
                   : "text-slate-500 hover:text-slate-800"
               }`}
               onClick={() => setIsYearly(true)}
@@ -107,19 +107,19 @@ const PricingSection = () => {
               key={index}
               className={`bg-white rounded-2xl p-8 border ${
                 plan.popular
-                  ? "border-cargo shadow-lg scale-105 z-10"
+                  ? "border-silogistik-orange-500 shadow-lg scale-105 z-10"
                   : "border-slate-200 shadow-sm"
               }`}
               data-aos="fade-up"
               data-aos-delay={index * 100}
             >
               <div className="mb-8">
-                <h3 className="text-2xl font-bold text-slate-800">{plan.name}</h3>
+                <h3 className="text-2xl font-bold text-silogistik-blue-500">{plan.name}</h3>
                 <p className="text-slate-600 mt-2">{plan.description}</p>
               </div>
 
               <div className="mb-6">
-                <span className="text-4xl font-bold text-slate-800">
+                <span className="text-4xl font-bold text-silogistik-blue-500">
                   Rp {isYearly ? plan.price.yearly : plan.price.monthly}
                 </span>
                 <span className="text-slate-500 ml-2">/ {isYearly ? "tahun" : "bulan"}</span>
@@ -128,7 +128,7 @@ const PricingSection = () => {
               <ul className="mb-8 space-y-4">
                 {plan.features.map((feature, i) => (
                   <li key={i} className="flex items-start">
-                    <Check className="h-5 w-5 text-cargo shrink-0 mt-0.5 mr-3" />
+                    <Check className="h-5 w-5 text-silogistik-orange-500 shrink-0 mt-0.5 mr-3" />
                     <span className="text-slate-700">{feature}</span>
                   </li>
                 ))}
@@ -136,7 +136,9 @@ const PricingSection = () => {
 
               <Button
                 className={`w-full ${
-                  plan.popular ? "bg-cargo hover:bg-cargo-dark" : "bg-slate-800 hover:bg-black"
+                  plan.popular 
+                    ? "bg-silogistik-orange-500 hover:bg-silogistik-orange-600 text-white" 
+                    : "bg-silogistik-blue-500 hover:bg-silogistik-blue-600 text-white"
                 }`}
               >
                 {plan.cta}

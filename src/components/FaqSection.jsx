@@ -8,37 +8,37 @@ import {
 
 const faqs = [
   {
-    question: "Apa itu CargoPilot?",
+    question: "Apa itu SI Logistik?",
     answer:
-      "CargoPilot adalah platform manajemen logistik terpadu yang membantu bisnis untuk mengoptimalkan proses pengiriman, pelacakan barang, dan manajemen armada. Platform ini dirancang untuk meningkatkan efisiensi operasional dan menurunkan biaya logistik.",
+      "SI Logistik adalah platform manajemen logistik terpadu yang membantu bisnis untuk mengoptimalkan proses pengiriman, pelacakan barang, dan manajemen armada. Platform ini dirancang untuk meningkatkan efisiensi operasional dan menurunkan biaya logistik Anda.",
   },
   {
-    question: "Apakah CargoPilot cocok untuk bisnis kecil?",
+    question: "Apakah SI Logistik cocok untuk bisnis kecil?",
     answer:
-      "Ya, CargoPilot menawarkan paket yang fleksibel sesuai dengan skala bisnis Anda. Paket Starter kami dirancang khusus untuk bisnis kecil yang baru memulai dengan fitur yang cukup untuk mengelola pengiriman dalam skala terbatas.",
+      "Ya, SI Logistik menawarkan paket yang fleksibel sesuai dengan skala bisnis Anda. Paket Starter kami dirancang khusus untuk bisnis kecil yang baru memulai dengan fitur yang cukup untuk mengelola pengiriman dalam skala terbatas.",
   },
   {
-    question: "Bagaimana cara mengintegrasikan CargoPilot dengan platform e-commerce saya?",
+    question: "Bagaimana cara mengintegrasikan SI Logistik dengan platform e-commerce saya?",
     answer:
-      "CargoPilot memiliki fitur integrasi dengan berbagai platform e-commerce populer seperti Shopify, WooCommerce, Tokopedia, dan Bukalapak. Proses integrasi mudah dilakukan melalui dashboard admin dan biasanya membutuhkan waktu kurang dari 1 jam untuk diatur.",
+      "SI Logistik memiliki fitur integrasi dengan berbagai platform e-commerce populer seperti Shopify, WooCommerce, Tokopedia, dan Bukalapak. Proses integrasi mudah dilakukan melalui dashboard admin dan biasanya membutuhkan waktu kurang dari 1 jam untuk diatur.",
   },
   {
     question: "Apakah saya perlu memasang perangkat khusus pada kendaraan untuk pelacakan?",
     answer:
-      "Tidak, CargoPilot menggunakan aplikasi mobile untuk kurir yang bisa dipasang pada smartphone biasa. Untuk fitur pelacakan armada yang lebih canggih, kami menawarkan integrasi dengan perangkat GPS yang sudah ada atau perangkat baru dengan biaya tambahan.",
+      "Tidak, SI Logistik menggunakan aplikasi mobile untuk kurir yang bisa dipasang pada smartphone biasa. Untuk fitur pelacakan armada yang lebih canggih, kami menawarkan integrasi dengan perangkat GPS yang sudah ada atau perangkat baru dengan biaya tambahan.",
   },
   {
-    question: "Apakah data saya aman di CargoPilot?",
+    question: "Apakah data saya aman di SI Logistik?",
     answer:
-      "Ya, kami memprioritaskan keamanan data pelanggan. CargoPilot menggunakan enkripsi tingkat tinggi, penyimpanan data terjamin, dan audit keamanan secara berkala. Kami juga mematuhi regulasi perlindungan data yang berlaku di Indonesia.",
+      "Ya, kami memprioritaskan keamanan data pelanggan. SI Logistik menggunakan enkripsi tingkat tinggi, penyimpanan data terjamin, dan audit keamanan secara berkala. Kami juga mematuhi regulasi perlindungan data yang berlaku di Indonesia.",
   },
   {
-    question: "Bagaimana proses implementasi CargoPilot di perusahaan saya?",
+    question: "Bagaimana proses implementasi SI Logistik di perusahaan saya?",
     answer:
       "Proses implementasi biasanya terdiri dari konsultasi awal, penyiapan akun, integrasi dengan sistem yang ada, pelatihan tim, dan pendampingan selama 30 hari pertama. Tim onboarding kami akan memandu Anda selama proses ini untuk memastikan transisi yang lancar.",
   },
   {
-    question: "Berapa lama waktu yang dibutuhkan untuk mengimplementasikan CargoPilot?",
+    question: "Berapa lama waktu yang dibutuhkan untuk mengimplementasikan SI Logistik?",
     answer:
       "Waktu implementasi bervariasi tergantung pada kompleksitas bisnis Anda. Untuk bisnis kecil, biasanya membutuhkan waktu 1-3 hari. Untuk bisnis menengah, sekitar 1 minggu, dan untuk enterprise dengan kebutuhan kustom, bisa memakan waktu 2-4 minggu.",
   },
@@ -46,12 +46,12 @@ const faqs = [
 
 const FaqSection = () => {
   return (
-    <section className="py-20 bg-white" id="faq">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="section-title">Pertanyaan Umum</h2>
-          <p className="section-subtitle">
-            Jawaban untuk pertanyaan yang sering diajukan tentang CargoPilot
+    <section className="py-24 bg-gradient-to-b from-silogistik-blue-50 to-white" id="faq">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-silogistik-blue-500">Pertanyaan Umum</h2>
+          <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto">
+            Jawaban untuk pertanyaan yang sering diajukan tentang SI Logistik
           </p>
         </div>
 
@@ -61,12 +61,14 @@ const FaqSection = () => {
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="border border-slate-200 rounded-lg bg-white shadow-sm"
+                className="border border-slate-200 rounded-xl bg-white shadow-sm hover:shadow-md transition-all duration-200"
               >
-                <AccordionTrigger className="px-6 text-left hover:no-underline hover:text-cargo data-[state=open]:text-cargo">
-                  <div className="font-semibold text-slate-900">{faq.question}</div>
+                <AccordionTrigger className="px-6 py-4 text-left hover:no-underline data-[state=open]:text-silogistik-orange-500 data-[state=open]:border-b border-slate-100">
+                  <div className="font-semibold text-slate-800 hover:text-silogistik-orange-500 transition-colors">
+                    {faq.question}
+                  </div>
                 </AccordionTrigger>
-                <AccordionContent className="px-6 pb-6 text-slate-600">
+                <AccordionContent className="px-6 pt-4 pb-6 text-slate-600 leading-relaxed">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
