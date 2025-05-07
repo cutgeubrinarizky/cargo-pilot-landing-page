@@ -6,7 +6,7 @@ const testimonials = [
   {
     id: 1,
     content:
-      "SI Logistik benar-benar mengubah cara kami mengelola pengiriman. Sebelumnya, tim kami menghabiskan berjam-jam menginput data dan mengatur rute secara manual. Sekarang, proses ini jauh lebih efisien dan kami bisa memantau pengiriman secara real-time.",
+      "Silogistik benar-benar mengubah cara kami mengelola pengiriman. Sebelumnya, tim kami menghabiskan berjam-jam menginput data dan mengatur rute secara manual. Sekarang, proses ini jauh lebih efisien dan kami bisa memantau pengiriman secara real-time.",
     name: "Budi Santoso",
     position: "Manajer Operasional",
     company: "Logistics Express",
@@ -15,7 +15,7 @@ const testimonials = [
   {
     id: 2,
     content:
-      "Sebagai bisnis e-commerce yang berkembang pesat, kami butuh solusi logistik yang dapat mengikuti pertumbuhan kami. SI Logistik tidak hanya memenuhi kebutuhan itu, tapi juga membantu kami meningkatkan pengalaman pelanggan dengan transparansi status pengiriman.",
+      "Sebagai bisnis e-commerce yang berkembang pesat, kami butuh soluSilogistik yang dapat mengikuti pertumbuhan kami. Silogistik tidak hanya memenuhi kebutuhan itu, tapi juga membantu kami meningkatkan pengalaman pelanggan dengan transparansi status pengiriman.",
     name: "Siti Aminah",
     position: "CEO",
     company: "FashionStoreID",
@@ -24,7 +24,7 @@ const testimonials = [
   {
     id: 3,
     content:
-      "Integrasi yang mudah dengan sistem e-commerce kami adalah alasan utama kami memilih SI Logistik. Tim dukungan mereka sangat membantu dalam proses implementasi, dan platform ini sangat intuitif digunakan bahkan oleh staf yang tidak terlalu paham teknologi.",
+      "Integrasi yang mudah dengan sistem e-commerce kami adalah alasan utama kami memilih Silogistik. Tim dukungan mereka sangat membantu dalam proses implementasi, dan platform ini sangat intuitif digunakan bahkan oleh staf yang tidak terlalu paham teknologi.",
     name: "Agus Wiranto",
     position: "CTO",
     company: "Multi Retail Group",
@@ -33,7 +33,7 @@ const testimonials = [
   {
     id: 4,
     content:
-      "Dashboard analitik SI Logistik memberikan insight yang sangat berharga bagi bisnis kami. Kami dapat dengan mudah melihat tren pengiriman, area yang perlu ditingkatkan, dan mengoptimalkan rute untuk penghematan biaya yang signifikan.",
+      "Dashboard analitik Silogistik memberikan insight yang sangat berharga bagi bisnis kami. Kami dapat dengan mudah melihat tren pengiriman, area yang perlu ditingkatkan, dan mengoptimalkan rute untuk penghematan biaya yang signifikan.",
     name: "Dewi Anggraini",
     position: "Direktur Logistik",
     company: "Cepat Antar Indonesia",
@@ -72,7 +72,7 @@ const TestimonialsSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-silogistik-blue-500">Testimoni Pengguna</h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Lihat bagaimana SI Logistik membantu berbagai bisnis meningkatkan operasi logistik mereka
+            Lihat bagaimana Silogistik membantu berbagai bisnis meningkatkan operaSilogistik mereka
           </p>
         </div>
 

@@ -51,33 +51,81 @@ const Navbar = () => {
             <DialogTrigger asChild>
               <Button variant="outline" className="text-silogistik-blue border-silogistik-blue hover:bg-silogistik-blue/10">Masuk</Button>
             </DialogTrigger>
-            <DialogContent className="sm:max-w-[425px]">
-              <DialogHeader>
-                <DialogTitle className="text-center text-2xl font-bold text-silogistik-blue">Masuk ke Akun Anda</DialogTitle>
-                <DialogDescription className="text-center">
-                  Masukkan email dan kata sandi untuk mengakses akun Anda
-                </DialogDescription>
-              </DialogHeader>
-              <div className="grid gap-4 py-4">
-                <div className="grid gap-2">
-                  <Label htmlFor="email">Email</Label>
-                  <Input id="email" type="email" placeholder="nama@perusahaan.com" />
-                </div>
-                <div className="grid gap-2">
-                  <Label htmlFor="password">Kata Sandi</Label>
-                  <Input id="password" type="password" />
-                </div>
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center space-x-2">
-                    <Checkbox id="remember" />
-                    <label htmlFor="remember" className="text-sm text-slate-600">Ingat saya</label>
+            <DialogContent className="sm:max-w-[400px] p-0 overflow-hidden rounded-[32px] border-none bg-white/90 backdrop-blur-md shadow-2xl animate-in zoom-in-95 duration-300">
+              <div className="relative overflow-hidden">
+                {/* Background pattern */}
+                <div className="absolute inset-0 bg-gradient-to-br from-silogistik-blue-50/50 via-white to-silogistik-orange-50/30 pointer-events-none" />
+                
+                <div className="relative p-8 space-y-6">
+                  <DialogHeader className="space-y-2">
+                    <DialogTitle className="text-2xl font-semibold bg-gradient-to-r from-silogistik-blue-600 to-silogistik-orange-500 bg-clip-text text-transparent">
+                      Masuk
+                    </DialogTitle>
+                    <DialogDescription className="text-slate-500">
+                      Masukkan email dan kata sandi Anda
+                    </DialogDescription>
+                  </DialogHeader>
+
+                  <div className="space-y-5">
+                    <div className="space-y-4">
+                      <div className="space-y-2">
+                        <Label htmlFor="email" className="text-sm font-medium text-slate-700">Email</Label>
+                        <Input 
+                          id="email" 
+                          type="email" 
+                          placeholder="nama@perusahaan.com"
+                          className="w-full px-4 py-3 rounded-2xl border border-slate-200 bg-white focus:border-silogistik-blue-500 focus:ring-2 focus:ring-silogistik-blue-500/20 transition-all duration-200 hover:border-slate-300"
+                        />
+                      </div>
+
+                      <div className="space-y-2">
+                        <Label htmlFor="password" className="text-sm font-medium text-slate-700">Kata Sandi</Label>
+                        <Input 
+                          id="password" 
+                          type="password"
+                          className="w-full px-4 py-3 rounded-2xl border border-slate-200 bg-white focus:border-silogistik-blue-500 focus:ring-2 focus:ring-silogistik-blue-500/20 transition-all duration-200 hover:border-slate-300"
+                        />
+                      </div>
+
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center space-x-2">
+                          <Checkbox id="remember" className="rounded-xl border-2 border-slate-200 text-silogistik-blue-500 focus:ring-2 focus:ring-silogistik-blue-500/20 transition-colors duration-200" />
+                          <label htmlFor="remember" className="text-sm text-slate-600 select-none">Ingat saya</label>
+                        </div>
+                        <a href="#" className="text-sm font-medium text-silogistik-blue-500 hover:text-silogistik-orange-500 transition-colors duration-200">
+                          Lupa kata sandi?
+                        </a>
+                      </div>
+
+                      <Button className="w-full bg-gradient-to-r from-silogistik-blue-500 to-silogistik-orange-500 hover:from-silogistik-blue-600 hover:to-silogistik-orange-600 text-white py-3 rounded-2xl font-medium transition-all duration-300 transform hover:translate-y-[-2px] hover:shadow-lg active:translate-y-0">
+                        Masuk
+                      </Button>
+
+                      <div className="text-center">
+                        <span className="text-sm text-slate-500">
+                          Belum punya akun? {" "}
+                          <a href="#" className="font-medium text-silogistik-blue-500 hover:text-silogistik-orange-500 transition-colors duration-200">
+                            Daftar sekarang
+                          </a>
+                        </span>
+                      </div>
+
+                      <div className="relative">
+                        <div className="absolute inset-0 flex items-center">
+                          <div className="w-full border-t border-slate-200"></div>
+                        </div>
+                        <div className="relative flex justify-center text-xs uppercase">
+                          <span className="px-4 text-slate-500 bg-white text-sm">atau</span>
+                        </div>
+                      </div>
+
+                      <button className="w-full flex items-center justify-center gap-3 px-4 py-3 rounded-2xl border-2 border-slate-200 bg-white hover:bg-slate-50 transition-colors duration-200">
+                        <img src="/images/google.svg" alt="Google" className="w-5 h-5" />
+                        <span className="text-sm font-medium text-slate-700">Lanjutkan dengan Google</span>
+                      </button>
+                    </div>
                   </div>
-                  <a href="#" className="text-sm text-silogistik-orange hover:text-silogistik-orange/80">Lupa kata sandi?</a>
                 </div>
-                <Button className="w-full mt-2 bg-silogistik-blue hover:bg-silogistik-blue/90">Masuk</Button>
-                <p className="text-center text-sm text-slate-600">
-                  Belum punya akun? <a href="#" className="text-silogistik-orange hover:text-silogistik-orange/80">Daftar sekarang</a>
-                </p>
               </div>
             </DialogContent>
           </Dialog>
@@ -86,46 +134,102 @@ const Navbar = () => {
             <DialogTrigger asChild>
               <Button className="bg-silogistik-orange hover:bg-silogistik-orange/90 text-white">Daftar</Button>
             </DialogTrigger>
-            <DialogContent className="sm:max-w-[425px]">
-              <DialogHeader>
-                <DialogTitle className="text-center text-2xl font-bold">Buat Akun Baru</DialogTitle>
-                <DialogDescription className="text-center">
-                  Daftar untuk mulai menggunakan SI Logistik
-                </DialogDescription>
-              </DialogHeader>
-              <div className="grid gap-4 py-4">
-                <div className="grid grid-cols-2 gap-2">
-                  <div>
-                    <Label htmlFor="firstName">Nama Depan</Label>
-                    <Input id="firstName" />
+            <DialogContent className="sm:max-w-[400px] p-0 overflow-hidden rounded-[32px] border-none bg-white/90 backdrop-blur-md shadow-2xl animate-in zoom-in-95 duration-300">
+              <div className="relative overflow-hidden">
+                {/* Background pattern */}
+                <div className="absolute inset-0 bg-gradient-to-br from-silogistik-orange-50/50 via-white to-silogistik-blue-50/30 pointer-events-none" />
+                
+                <div className="relative p-8 space-y-6">
+                  <DialogHeader className="space-y-2">
+                    <DialogTitle className="text-2xl font-semibold bg-gradient-to-r from-silogistik-orange-500 to-silogistik-blue-500 bg-clip-text text-transparent">
+                      Daftar Akun
+                    </DialogTitle>
+                    <DialogDescription className="text-slate-500">
+                      Buat akun baru Silogistik
+                    </DialogDescription>
+                  </DialogHeader>
+
+                  <div className="space-y-5">
+                    <div className="space-y-4">
+                      <div className="grid grid-cols-2 gap-4">
+                        <div className="space-y-2">
+                          <Label htmlFor="firstName" className="text-sm font-medium text-slate-700">Nama Depan</Label>
+                          <Input 
+                            id="firstName"
+                            className="w-full px-4 py-3 rounded-2xl border border-slate-200 bg-white focus:border-silogistik-orange-500 focus:ring-2 focus:ring-silogistik-orange-500/20 transition-all duration-200 hover:border-slate-300"
+                          />
+                        </div>
+                        <div className="space-y-2">
+                          <Label htmlFor="lastName" className="text-sm font-medium text-slate-700">Nama Belakang</Label>
+                          <Input 
+                            id="lastName"
+                            className="w-full px-4 py-3 rounded-2xl border border-slate-200 bg-white focus:border-silogistik-orange-500 focus:ring-2 focus:ring-silogistik-orange-500/20 transition-all duration-200 hover:border-slate-300"
+                          />
+                        </div>
+                      </div>
+
+                      <div className="space-y-2">
+                        <Label htmlFor="email-register" className="text-sm font-medium text-slate-700">Email</Label>
+                        <Input 
+                          id="email-register" 
+                          type="email" 
+                          placeholder="nama@perusahaan.com"
+                          className="w-full px-4 py-3 rounded-2xl border border-slate-200 bg-white focus:border-silogistik-orange-500 focus:ring-2 focus:ring-silogistik-orange-500/20 transition-all duration-200 hover:border-slate-300"
+                        />
+                      </div>
+
+                      <div className="space-y-2">
+                        <Label htmlFor="password-register" className="text-sm font-medium text-slate-700">Kata Sandi</Label>
+                        <Input 
+                          id="password-register" 
+                          type="password"
+                          className="w-full px-4 py-3 rounded-2xl border border-slate-200 bg-white focus:border-silogistik-orange-500 focus:ring-2 focus:ring-silogistik-orange-500/20 transition-all duration-200 hover:border-slate-300"
+                        />
+                      </div>
+
+                      <div className="flex items-start gap-3">
+                        <Checkbox id="terms" className="mt-1 rounded-xl border-2 border-slate-200 text-silogistik-orange-500 focus:ring-2 focus:ring-silogistik-orange-500/20 transition-colors duration-200" />
+                        <label htmlFor="terms" className="text-sm text-slate-600">
+                          Saya setuju dengan {" "}
+                          <a href="#" className="font-medium text-silogistik-orange-500 hover:text-silogistik-blue-500 transition-colors duration-200">
+                            Syarat & Ketentuan
+                          </a>
+                          {" "}dan{" "}
+                          <a href="#" className="font-medium text-silogistik-orange-500 hover:text-silogistik-blue-500 transition-colors duration-200">
+                            Kebijakan Privasi
+                          </a>
+                        </label>
+                      </div>
+
+                      <Button className="w-full bg-gradient-to-r from-silogistik-orange-500 to-silogistik-blue-500 hover:from-silogistik-orange-600 hover:to-silogistik-blue-600 text-white py-3 rounded-2xl font-medium transition-all duration-300 transform hover:translate-y-[-2px] hover:shadow-lg active:translate-y-0">
+                        Daftar Sekarang
+                      </Button>
+
+                      <div className="text-center">
+                        <span className="text-sm text-slate-500">
+                          Sudah punya akun? {" "}
+                          <a href="#" className="font-medium text-silogistik-orange-500 hover:text-silogistik-blue-500 transition-colors duration-200">
+                            Masuk disini
+                          </a>
+                        </span>
+                      </div>
+
+                      <div className="relative">
+                        <div className="absolute inset-0 flex items-center">
+                          <div className="w-full border-t border-slate-200"></div>
+                        </div>
+                        <div className="relative flex justify-center text-xs uppercase">
+                          <span className="px-4 text-slate-500 bg-white text-sm">atau</span>
+                        </div>
+                      </div>
+
+                      <button className="w-full flex items-center justify-center gap-3 px-4 py-3 rounded-2xl border-2 border-slate-200 bg-white hover:bg-slate-50 transition-colors duration-200">
+                        <img src="/images/google.svg" alt="Google" className="w-5 h-5" />
+                        <span className="text-sm font-medium text-slate-700">Daftar dengan Google</span>
+                      </button>
+                    </div>
                   </div>
-                  <div>
-                    <Label htmlFor="lastName">Nama Belakang</Label>
-                    <Input id="lastName" />
-                  </div>
                 </div>
-                <div className="grid gap-2">
-                  <Label htmlFor="email-register">Email</Label>
-                  <Input id="email-register" type="email" placeholder="nama@perusahaan.com" />
-                </div>
-                <div className="grid gap-2">
-                  <Label htmlFor="password-register">Kata Sandi</Label>
-                  <Input id="password-register" type="password" />
-                </div>
-                <div className="grid gap-2">
-                  <Label htmlFor="confirm-password">Konfirmasi Kata Sandi</Label>
-                  <Input id="confirm-password" type="password" />
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Checkbox id="terms" />
-                  <label htmlFor="terms" className="text-sm text-slate-600">
-                    Saya setuju dengan <a href="#" className="text-blue-600 hover:text-blue-800">Syarat & Ketentuan</a> dan <a href="#" className="text-blue-600 hover:text-blue-800">Kebijakan Privasi</a>
-                  </label>
-                </div>
-                <Button className="w-full mt-2 bg-silogistik-orange hover:bg-silogistik-orange/90">Daftar Sekarang</Button>
-                <p className="text-center text-sm text-slate-600">
-                  Sudah punya akun? <a href="#" className="text-silogistik-orange hover:text-silogistik-orange/80">Masuk disini</a>
-                </p>
               </div>
             </DialogContent>
           </Dialog>

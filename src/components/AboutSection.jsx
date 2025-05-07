@@ -10,14 +10,14 @@ const founders = [
       "Lulusan S2 Manajemen Bisnis ITB",
       "Pengalaman memimpin tim 500+ karyawan",
       "Ahli dalam optimasi rantai pasok",
-      "Pembicara di berbagai konferensi logistik"
+      "Pembicara di berbagai konferenSilogistik"
     ]
   },
   {
     name: "Siti Nurhayati",
     position: "CTO & Co-Founder",
     image: "/images/founders/siti-nurhayati.jpg",
-    description: "Insinyur software dengan spesialisasi di AI dan machine learning. Memimpin pengembangan algoritma optimasi rute SI Logistik.",
+    description: "Insinyur software dengan spesialisasi di AI dan machine learning. Memimpin pengembangan algoritma optimasi rute Silogistik.",
     details: [
       "Doktor Ilmu Komputer dari UI",
       "10+ tahun pengalaman pengembangan software",
@@ -69,7 +69,7 @@ const AboutSection = () => {
             <div className="absolute bottom-0 left-0 w-full h-1 bg-silogistik-orange-500 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></div>
           </h2>
           <p className="text-lg text-slate-600 mt-2 hover:text-silogistik-orange-500 transition-colors duration-300">
-            Bertemu dengan para ahli di balik SI Logistik
+            Bertemu dengan para ahli di balik Silogistik
           </p>
         </div>
 
@@ -139,7 +139,7 @@ const AboutSection = () => {
             Visi Kami
           </h3>
           <p className="text-lg text-slate-600 leading-relaxed italic transition-colors duration-300 group-hover:text-silogistik-orange-500/80">
-            "Menjadi pemimpin inovasi logistik di Asia Tenggara, menyediakan solusi yang memungkinkan bisnis dari semua ukuran untuk bersaing secara global melalui operasi logistik yang efisien dan cerdas."
+            "Menjadi pemimpin inovaSilogistik di Asia Tenggara, menyediakan solusi yang memungkinkan bisnis dari semua ukuran untuk bersaing secara global melalui operaSilogistik yang efisien dan cerdas."
           </p>
         </div>
       </div>

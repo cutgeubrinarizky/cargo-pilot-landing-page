@@ -3,21 +3,6 @@ import { Button } from "@/components/ui/button.jsx";
 import { ArrowRight, Shield, Zap, Clock } from "lucide-react";
 
 const HeroSection = () => {
-  const highlights = [
-    {
-      icon: <Shield className="w-5 h-5 text-silogistik-blue-500" />,
-      text: "Keamanan Data Terjamin"
-    },
-    {
-      icon: <Zap className="w-5 h-5 text-silogistik-orange-500" />,
-      text: "Setup Cepat 5 Menit"
-    },
-    {
-      icon: <Clock className="w-5 h-5 text-green-500" />,
-      text: "Dukungan 24/7"
-    }
-  ];
-
   return (
     <section className="hero-section min-h-screen flex items-center overflow-hidden relative bg-gradient-to-b from-white to-slate-50" id="hero">
       {/* Background pattern dengan efek parallax */}
@@ -36,7 +21,7 @@ const HeroSection = () => {
             
             <div className="space-y-6">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-                <span className="text-silogistik-blue-600">SI Logistik</span> - 
+                <span className="text-silogistik-blue-600">Silogistik</span> - 
                 <span className="bg-gradient-to-r from-silogistik-blue-600 via-silogistik-orange-500 to-silogistik-orange-600 text-transparent bg-clip-text"> Solusi Manajemen Logistik Terpadu</span>
               </h1>
               
@@ -62,21 +47,6 @@ const HeroSection = () => {
                 <ArrowRight className="ml-2" size={20} />
               </Button>
             </div>
-
-            {/* Highlights dengan desain card yang lebih modern */}
-            <div className="flex flex-wrap gap-4 items-center">
-              {highlights.map((item, index) => (
-                <div
-                  key={index}
-                  className="flex items-center gap-3 bg-white/80 backdrop-blur-lg px-5 py-3 rounded-2xl border border-slate-100 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-                >
-                  <div className="p-2 rounded-xl bg-gradient-to-br from-slate-50 to-white shadow-inner">
-                    {item.icon}
-                  </div>
-                  <span className="text-sm font-semibold text-slate-700">{item.text}</span>
-                </div>
-              ))}
-            </div>
           </div>
 
           <div className="animate-float flex justify-center lg:justify-end">
@@ -86,7 +56,7 @@ const HeroSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-tr from-silogistik-blue-500/10 to-silogistik-orange-500/10 rounded-3xl"></div>
                 <img
                   src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80"
-                  alt="SI Logistik Dashboard"
+                  alt="Silogistik Dashboard"
                   className="w-full h-auto rounded-2xl shadow-lg transition-transform duration-300 hover:scale-[1.02]"
                   loading="eager"
                   style={{
@@ -96,8 +66,9 @@ const HeroSection = () => {
                   }}
                 />
 
-                {/* Floating feature highlight dengan desain yang lebih modern */}
-                <div className="absolute -bottom-8 -right-8 bg-white/90 backdrop-blur-xl p-5 rounded-2xl shadow-2xl border border-white">
+                {/* Floating feature highlights */}
+                {/* Setup Cepat - di kanan tengah */}
+                <div className="absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-xl p-5 rounded-2xl shadow-2xl border border-white">
                   <div className="flex items-center gap-4">
                     <div className="bg-gradient-to-br from-silogistik-blue-50 to-silogistik-blue-100 p-3 rounded-xl shadow-inner">
                       <Zap className="w-7 h-7 text-silogistik-blue-500" />
@@ -105,6 +76,32 @@ const HeroSection = () => {
                     <div>
                       <p className="text-base font-semibold text-slate-900">Setup Cepat</p>
                       <p className="text-sm text-slate-500">Mulai dalam 5 menit</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Keamanan Data - di atas tengah */}
+                <div className="absolute top-0 left-1/4 transform -translate-x-1/2 -translate-y-1/2 bg-white/90 backdrop-blur-xl p-5 rounded-2xl shadow-2xl border border-white">
+                  <div className="flex items-center gap-4">
+                    <div className="bg-gradient-to-br from-silogistik-blue-50 to-silogistik-blue-100 p-3 rounded-xl shadow-inner">
+                      <Shield className="w-7 h-7 text-silogistik-blue-500" />
+                    </div>
+                    <div>
+                      <p className="text-base font-semibold text-slate-900">Keamanan Data</p>
+                      <p className="text-sm text-slate-500">100% Terjamin</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Dukungan 24/7 - di bawah tengah */}
+                <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 bg-white/90 backdrop-blur-xl p-5 rounded-2xl shadow-2xl border border-white">
+                  <div className="flex items-center gap-4">
+                    <div className="bg-gradient-to-br from-silogistik-blue-50 to-silogistik-blue-100 p-3 rounded-xl shadow-inner">
+                      <Clock className="w-7 h-7 text-silogistik-blue-500" />
+                    </div>
+                    <div>
+                      <p className="text-base font-semibold text-slate-900">Dukungan</p>
+                      <p className="text-sm text-slate-500">24/7 Non-Stop</p>
                     </div>
                   </div>
                 </div>

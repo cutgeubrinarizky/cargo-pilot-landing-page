@@ -18,8 +18,8 @@ const FooterSection = () => {
   return (
     <footer className="relative overflow-hidden">
       {/* Background Pattern */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#0A2847] to-[#061A2E]">
-        <div className="absolute inset-0 opacity-35">
+      <div className="absolute inset-0 bg-gradient-to-br from-[#2A2D35] to-[#363943]">
+        <div className="absolute inset-0 opacity-15">
           <div className="absolute inset-0 bg-[linear-gradient(45deg,rgba(255,255,255,0.06)_1px,transparent_1px),linear-gradient(135deg,rgba(255,255,255,0.06)_1px,transparent_1px)] bg-[size:16px_16px]"></div>
         </div>
       </div>
@@ -29,7 +29,7 @@ const FooterSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-x-12 gap-y-8 mb-8">
             {/* Logo dan Deskripsi */}
             <div className="lg:col-span-4">
-              <div className="mb-4">
+              <div className="mb-4 bg-black/10 inline-block p-2 rounded-lg">
                 <img
                   src="/images/logosilogistik.png"
                   alt="SI Logistik Logo"
